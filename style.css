@@ -2,30 +2,36 @@
     font-family: FiraCode;
     src: url(fonts/Fira_Code/FiraCode-VariableFont_wght.ttf) format("truetype");
 }
+
 @font-face {
     font-family: FireCodeBold;
     src: url(fonts/Fira_Code/static/FiraCode-Bold.ttf) format("truetype");
 }
+
 @font-face {
     font-family: FireCodeMedium;
     src: url(fonts/Fira_Code/static/FiraCode-Medium.ttf) format("truetype");
 }
+
 @font-face {
     font-family: FireCodeSemiBold;
     src: url(fonts/Fira_Code/static/FiraCode-SemiBold.ttf) format("truetype");
 }
 
 body {
-    margin:0;
+    margin: 0;
     padding: 0;
     font-family: FiraCode, monospace;
     transition: 0.5s all;
+    background-color: #f8f8f8;
 }
+
 * {
     box-sizing: border-box;
 }
+
 .btn-dark-light {
-  
+
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -33,121 +39,130 @@ body {
     /* border: 1px solid red; */
     cursor: pointer;
 }
-body.dark-mode {  
-    background-color: #100F0F;
+
+body.dark-mode {
+    background-color: #ffffff;
     color: #f8f8f8;
 }
+
 @font-face {
     font-family: FiraCode;
     src: url(fonts/Fira_Code/FiraCode-VariableFont_wght.ttf) format("truetype");
 }
+
 @font-face {
     font-family: FireCodeBold;
     src: url(fonts/Fira_Code/static/FiraCode-Bold.ttf) format("truetype");
 }
+
 @font-face {
     font-family: FireCodeMedium;
     src: url(fonts/Fira_Code/static/FiraCode-Medium.ttf) format("truetype");
 }
+
 @font-face {
     font-family: FireCodeSemiBold;
     src: url(fonts/Fira_Code/static/FiraCode-SemiBold.ttf) format("truetype");
 }
 
 body {
-    margin:0;
+    margin: 0;
     padding: 0;
     font-family: FiraCode, monospace;
     transition: 0.5s all;
 }
+
 * {
     box-sizing: border-box;
 }
-.btn-dark-light {
-  
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #f8f8f8;
-    /* border: 1px solid red; */
-    cursor: pointer;
-}
-body.dark-mode {  
+
+body.dark-mode {
     background-color: #100F0F;
     color: #f8f8f8;
 }
+
 #HeaderContent {
     /* border:1px solid red; */
     height: 5rem;
-    width:75%;
+    width: 75%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-self: center;
     position: relative;
 }
+
 #LogoContainer {
     display: flex;
     align-items: center;
     flex: 1;
     /* border:1px solid red ; */
 }
+
 #LogoText {
     font-family: FireCodeBold;
 }
+
 #NavContainer {
     width: 45%;
     /* border: 1px solid red; */
     display: flex;
 }
+
 #NavContainer ul {
     display: flex;
     list-style: none;
     width: 100%;
     justify-content: space-around;
 }
+
 #NavContainer ul li {
     cursor: pointer;
 }
-#NavContainer a{
+
+#NavContainer a {
     font-family: FireCodeMedium;
     font-size: 16px;
     text-decoration: none;
     color: grey;
 }
+
 #NavContainer a:hover {
-    color:white;
+    color: white;
 }
 
 #NavContainer span {
     color: #C778DD;
 }
-.IdiomaSelector{
+
+.IdiomaSelector {
     margin-left: 1%;
     color: grey;
     display: flex;
     flex-direction: row;
     /* border: 1px solid blue; */
-    position: relative; 
+    position: relative;
 }
 
 .IconIdioma {
-    width:20px;
+    width: 20px;
     display: flex;
     align-self: center;
     align-items: center;
     justify-items: center;
     margin-left: 5px;
-    height:20px;
+    height: 20px;
     /* border: 1px solid red; */
 }
-.IdiomaSelector:hover > .IconIdioma {
-   animation:Girar 0.5s forwards;
+
+.IdiomaSelector:hover>.IconIdioma {
+    animation: Girar 0.5s forwards;
 }
 
-.IdiomaSelector:hover  .SelectorIdioma {
-    animation:Despliegue 0.5s forwards;
+.IdiomaSelector:hover .SelectorIdioma {
+    animation: Despliegue 0.5s forwards;
 }
+
 .SelectorIdioma {
     /* border: 1px solid red; */
     position: absolute;
@@ -160,15 +175,17 @@ body.dark-mode {
     opacity: 0;
     align-items: center;
     overflow: hidden;
-    border:1px solid white;
+    border: 1px solid white;
 }
-.SelectorIdioma a  {
+
+.SelectorIdioma a {
     padding: 10px;
     color: grey;
     text-decoration: none;
 }
+
 .SelectorIdioma a:hover {
-    color:white;
+    color: white;
 }
 
 @keyframes Despliegue {
@@ -176,20 +193,72 @@ body.dark-mode {
         height: 0;
         width: 0;
     }
+
     to {
-        opacity:1;
+        opacity: 1;
         width: auto;
         height: auto;
     }
 }
 
 @keyframes Girar {
-    from{
+    from {
         rotate: 0deg;
         color: grey;
     }
+
     to {
         rotate: 180deg;
         color: white;
     }
+}
+
+.Accesibilidad-container {
+    position: fixed;
+    right: 2%;
+    bottom: 10%;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+
+.btn-dark-light {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #f7f0f0;
+    /* border: 1px solid red; */
+    cursor: pointer;
+    border: none;
+}
+
+
+
+.dark-light-icon::before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    content: "🌙";
+    justify-content: center;
+    align-content: center;
+    border-radius: 100%;
+    border: 1px solid grey;
+    /* background-color: rgb(255, 255, 255); */
+    width: 100%;
+
+}
+
+.dark-light-icon.dark::before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    content: "☀️";
+    justify-content: center;
+    align-content: center;
+    border-radius: 100%;
+    /* border: 1px solid rgb(255, 255, 255); */
+    background-color: rgb(31, 31, 31);
+    width: 100%;
 }
