@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,45 @@
     <script src="script.js" defer></script>
     <title>Portafolio</title>
 </head>
+
 <body>
     <header>
         <section id="HeaderContent">
-            <button class="btn-dark-light">
-                <span class="dark-light-icon"></span>
-            </button>
+            <div id="LogoContainer">
+                <span id="LogoIcon">
+                    <img src="img/Icon_camilo.svg" alt="Logo" width="30" height="30" loading="lazy">
+                </span>
+                <span id="LogoText">Camilo</span>
+            </div>
+            <nav id="NavContainer">
+                <ul>
+                    <li><a href="#Home"><span>#</span>home</a></li>
+                    <li><a href="#Works"><span>#</span>proyectos</a></li>
+                    <li><a href="#AboutMe"><span>#</span>sobre-mi</a></li>
+                    <li><a href="#Contactos"><span>#</span>contacto</a></li>
+                </ul>
+            </nav>
+            <div class="IdiomaSelector">
+                <p>ES</p>
+                <div class="IconIdioma">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e3e3e3">
+                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                    </svg>
+                </div>
+                <div class="SelectorIdioma">
+                    <a href="index.html">ES</a>
+                    <a href="index-en.html">EN</a>
+                </div>
+            </div>
+
         </section>
     </header>
     <main></main>
+    <!-- <div class="Acessibliadd"></div>
+    <button class="btn-dark-light">
+        <span class="dark-light-icon"></span>
+    </button> -->
 </body>
 
 </html>
