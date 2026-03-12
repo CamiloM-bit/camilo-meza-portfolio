@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: FiraCodeRegular;
+    src: url(fonts/Fira_Code/static/FiraCode-Regular.ttf) format("truetype");
+}
+
+@font-face {
     font-family: FireCodeBold;
     src: url(fonts/Fira_Code/static/FiraCode-Bold.ttf) format("truetype");
 }
@@ -29,6 +34,7 @@ body {
 * {
     box-sizing: border-box;
 }
+
 
 .btn-dark-light {
 
@@ -74,6 +80,11 @@ body {
 
 * {
     box-sizing: border-box;
+    user-select: none;
+}
+img {
+    user-select: none;
+    pointer-events: none;
 }
 
 body.dark-mode {
@@ -81,14 +92,20 @@ body.dark-mode {
     color: #f8f8f8;
 }
 
-#HeaderContent {
-    /* border:1px solid red; */
-    height: 5rem;
+header {
+    position: fixed;
+    height: auto;
     width: 75%;
+    justify-self: center;
+    z-index: 9;
+}
+
+#HeaderContent {
+    height: 5rem;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-self: center;
     position: relative;
 }
 
@@ -152,30 +169,37 @@ body.dark-mode {
     justify-items: center;
     margin-left: 5px;
     height: 20px;
+    transition: 0.5s all;
     /* border: 1px solid red; */
 }
 
 .IdiomaSelector:hover>.IconIdioma {
-    animation: Girar 0.5s forwards;
+    rotate: 180deg;
 }
 
 .IdiomaSelector:hover .SelectorIdioma {
-    animation: Despliegue 0.5s forwards;
+    /* animation: Despliegue 0.5s forwards; */
+    opacity: 1;
+    width: auto;
+    height: auto;
+    transition: 2s all;
+    border: 1px solid white;
 }
 
 .SelectorIdioma {
-    /* border: 1px solid red; */
+    
     position: absolute;
     top: 100%;
     right: 0;
     background-color: #100F0F;
     display: flex;
     flex-direction: column;
-    height: 0;
+    height: 0px;
+    width: 0px;
     opacity: 0;
     align-items: center;
     overflow: hidden;
-    border: 1px solid white;
+    transition: 2s all;
 }
 
 .SelectorIdioma a {
@@ -262,6 +286,7 @@ body.dark-mode {
     background-color: rgb(31, 31, 31);
     width: 100%;
 }
+
 .Media-Container {
     position: fixed;
     display: block;
@@ -270,13 +295,16 @@ body.dark-mode {
     left: 0%;
     width: 5%;
     height: auto;
+    z-index: 9;
     /* border: 1px solid red; */
 }
+
 .Media-Container .Linea {
     height: 12rem;
     width: 1.5px;
-    background-color: rgb(109, 109, 109);
+    background-color: #6d6d6d;
 }
+
 .Media-item {
     display: flex;
     gap: 9px;
@@ -285,7 +313,167 @@ body.dark-mode {
     margin-top: 5px;
     /* border: 1px solid red; */
 }
+
 .Media-item a {
     display: flex;
     justify-content: center;
+}
+
+main {
+    /* border: 1px solid red; */
+    height: auto;
+}
+
+.Hero-Section {
+    margin: 12, 5% 12, 5%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    height: 40rem;
+}
+
+.Hero {
+    display: flex;
+    /* border: red 1px solid; */
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    position: absolute;
+    bottom: 10%;
+    height: 75%;
+}
+
+.Hero-text {
+    padding-top: 7%;
+    width: 30%;
+    flex: 1;
+    /* border: 1px solid red; */
+}
+
+.Hero-text span {
+    color: #C778DD;
+}
+
+.Hero-text .Text {
+
+    font-family: FireCodeSemiBold, monospace;
+    font-size: 32px;
+    /*  border: 1px solid red; */
+}
+
+.Hero-text .Text-sub {
+    color: #a7a6a6;
+    line-height: 25px;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.Hero-text a {
+    transition: 0.5s all;
+    border: #C778DD 0.5px solid;
+    text-decoration: none;
+    color: white;
+    padding: 7px 14px;
+}
+
+.Hero-text a:hover {
+    border-radius: 100px;
+}
+
+.Hero-image {
+    width: 40%;
+    flex: 1;
+    position: relative;
+}
+
+.Hero-image .Person {
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    justify-self: center;
+}
+
+.Works-Status {
+    display: flex;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 4%;
+    width: 85%;
+    left: 7.5%;
+    height: 10%;
+    border: 1px solid gray;
+}
+
+.Works-Status div {
+    background-color: #C778DD;
+    width: 15px;
+    height: 15px;
+    margin-right: 1%;
+}
+
+.Works-Status p {
+    color: #6d6d6d;
+    font-family: FireCodeMedium, monospace;
+}
+
+.Works-Status span {
+    color: white;
+    font-family: FireCodeSemiBold;
+}
+
+.Logo-vector {
+    position: absolute;
+    /* border: 1px solid red; */
+    top: 20%;
+    left: 5%;
+    animation: Animation-2 3s infinite;
+    transition: 2s all;
+}
+
+.Docs-Vector {
+    position: absolute;
+    /* border: 1px solid red; */
+    right: 5%;
+    bottom: 25%;
+    transition: 2s all;
+    animation: Animation-1 3s infinite;
+}
+
+/* .Hero-image:hover  .Docs-Vector {
+    transition: 2s;
+    bottom: 70%;
+    animation: Animation-1 0.5s forwards;
+} */
+
+/* .Hero-image:hover  .Logo-vector {
+    transition: 2s;
+    top: 40%;
+    
+    animation: Animation-1 0.5s forwards;
+} */
+
+@keyframes Animation-1 {
+    0% {
+        bottom: 25%;
+    }
+
+    50% {
+        bottom: 80%;
+    }
+}
+
+@keyframes Animation-2 {
+    0% {
+        top: 20%;
+    }
+
+    50% {
+        top: 40%;
+    }
 }
