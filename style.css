@@ -262,3 +262,30 @@ body.dark-mode {
     background-color: rgb(31, 31, 31);
     width: 100%;
 }
+.Media-Container {
+    position: fixed;
+    display: block;
+    justify-items: center;
+    top: 0;
+    left: 0%;
+    width: 5%;
+    height: auto;
+    /* border: 1px solid red; */
+}
+.Media-Container .Linea {
+    height: 12rem;
+    width: 1.5px;
+    background-color: rgb(109, 109, 109);
+}
+.Media-item {
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    /* border: 1px solid red; */
+}
+.Media-item a {
+    display: flex;
+    justify-content: center;
+}
