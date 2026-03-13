@@ -498,7 +498,22 @@ main {
     top: 10%;
     width: 20%;
     height: 45%;
+    transition: all 1s ease;
 }
+.Vector-Retangulo.DespliegueLeft {
+    right:-10%;
+}
+.sections{
+      opacity:0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.sections.visible {
+    opacity:1;
+    transform: translateY(0);
+}
+
 .Motivation-phrase {
     display: flex;
     flex-wrap: wrap;
@@ -555,3 +570,5 @@ main {
     height: auto;
     font-weight: 100;
 }
+
+
