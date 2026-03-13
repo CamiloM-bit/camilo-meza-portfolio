@@ -335,7 +335,7 @@ main {
     position: relative;
     justify-content: center;
     /* border: 1px solid blue; */
-    height: 40rem;
+    height: 41.5rem;
 }
 
 .Hero {
@@ -487,8 +487,17 @@ main {
     /* border:1px solid red; */
     display: flex;
     justify-content: center;
+    position: relative;
     height: 13rem;
-    margin: 5%;
+    margin: 0%;
+}
+.Vector-Retangulo {
+    border: 1px solid #aaa9a9;
+    position: absolute;
+    right: -14%;
+    top: 10%;
+    width: 20%;
+    height: 45%;
 }
 .Motivation-phrase {
     display: flex;
@@ -496,7 +505,7 @@ main {
     align-content: flex-start;
     /* border: 1px solid red; */
     height: 100%;
-    width: 58%;
+    width: 52%;
 }
 .phrase {
     border: 1px solid #aaa9a9;
@@ -511,7 +520,7 @@ main {
     /* border: 1px springgreen solid ; */
     position: absolute;
     top: -19%;
-    left: 2%;
+    left: 1.4%;
     
 }
 .phrase p {
@@ -541,6 +550,8 @@ main {
     font-size: 24px;
     margin: 0;
     /* border: 1px solid red; */
-    width: 90%;
+    text-align: center;
+    width: 100%;
     height: auto;
+    font-weight: 100;
 }
