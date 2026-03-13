@@ -5,14 +5,49 @@ document.addEventListener("DOMContentLoaded", () => {
     const savedDarkMode = localStorage.getItem('darkMode') === 'true';
     if (savedDarkMode) {
         document.body.classList.add('dark-mode');
-        darklighticon.classList.add('dark')
+        if (darklighticon) darklighticon.classList.add('dark');
     }
-  
-    btnDarkLight.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        darklighticon.classList.toggle('dark')
-        
-        const isDarkMode = document.body.classList.contains('dark-mode');
-        localStorage.setItem('darkMode', isDarkMode);
+
+    if (btnDarkLight) {
+        btnDarkLight.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+
+            if (darklighticon) {
+                darklighticon.classList.toggle('dark');
+            }
+
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+        });
+    }
+
+
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                
+                entry.target.classList.add('visible');
+
+                
+                if (entry.target.classList.contains('Vector-Retangulo')) {
+                    entry.target.classList.add('DespliegueLeft');
+                }
+
+                observer.unobserve(entry.target);
+            }
+
+        });
+
     });
+
+    const items = document.querySelectorAll('.sections, .Vector-Retangulo');
+
+    items.forEach(item => {
+        observer.observe(item);
+    });
+
 });
