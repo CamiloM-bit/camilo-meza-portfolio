@@ -31,6 +31,10 @@ body {
     background-color: #f8f8f8;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -94,6 +98,7 @@ body.dark-mode {
 
 header {
     position: fixed;
+    background-color: #100F0F;
     height: auto;
     width: 75%;
     justify-self: center;
@@ -377,7 +382,7 @@ main {
 }
 
 .Hero-text a:hover {
-    border-radius: 100px;
+    background-color: #c778dd62;
 }
 
 .Hero-image {
@@ -432,7 +437,7 @@ main {
     /* border: 1px solid red; */
     top: 20%;
     left: 5%;
-    animation: Animation-2 3s infinite;
+    animation: Animation-2 7s infinite;
     transition: 2s all;
 }
 
@@ -442,7 +447,7 @@ main {
     right: 5%;
     bottom: 25%;
     transition: 2s all;
-    animation: Animation-1 3s infinite;
+    animation: Animation-1 7s infinite;
 }
 
 /* .Hero-image:hover  .Docs-Vector {
@@ -476,4 +481,66 @@ main {
     50% {
         top: 40%;
     }
+}
+
+#Frase-container {
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: center;
+    height: 13rem;
+    margin: 5%;
+}
+.Motivation-phrase {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 58%;
+}
+.phrase {
+    border: 1px solid #aaa9a9;
+    display: flex;
+    justify-content: center;
+    height: 47.8%;
+    width: 100%;
+    position: relative;
+    font-family: FireCodeMedium;
+}
+.phrase img {
+    /* border: 1px springgreen solid ; */
+    position: absolute;
+    top: -19%;
+    left: 2%;
+    
+}
+.phrase p {
+    margin: 0;
+    font-size: 24px;
+    align-self: center;
+}
+.Autor {
+    border: 1px solid #aaa9a9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: none;
+    height: 31.5%;
+    width: 23%;
+    position: relative;
+    left: 77%;
+}
+.Autor img {
+    /* border: 1px springgreen solid ; */
+    position: absolute;
+    top: -19%;
+    right: 10%;
+}
+.Autor p {
+    font-family: FiraCodeRegular;
+    font-size: 24px;
+    margin: 0;
+    /* border: 1px solid red; */
+    width: 90%;
+    height: auto;
 }
