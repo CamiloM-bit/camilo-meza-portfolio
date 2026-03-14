@@ -37,14 +37,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     entry.target.classList.add('DespliegueLeft');
                 }
 
+                if (entry.target.classList.contains('VectorDocs')) {
+                    entry.target.classList.add('DespliegueRight');
+                }
+
                 observer.unobserve(entry.target);
             }
 
         });
 
     });
+    
 
-    const items = document.querySelectorAll('.sections, .Vector-Retangulo');
+    const items = document.querySelectorAll('.sections, .Vector-Retangulo, .VectorDocs');
 
     items.forEach(item => {
         observer.observe(item);
