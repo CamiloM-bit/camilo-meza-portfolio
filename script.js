@@ -21,8 +21,38 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    let traducciones = {};
 
-    
+    async function cargarIdioma(idioma) {
+        const res = await fetch(`lang/${idioma}.json`);
+        traducciones = await res.json();
+
+        traducirPagina();
+
+        localStorage.setItem("idioma", idioma);
+
+        const label = document.querySelector('.IdiomaLabel');
+        if (label) label.textContent = idioma.toUpperCase();
+    }
+
+    window.cargarIdioma = cargarIdioma;
+
+    function traducirPagina() {
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+            const clave = el.getAttribute("data-i18n");
+            el.textContent = traducciones[clave];
+        });
+
+        document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+            const clave = el.getAttribute("data-i18n-placeholder");
+            el.placeholder = traducciones[clave];
+        });
+    }
+
+    const idiomaGuardado = localStorage.getItem("idioma") || "es";
+
+    cargarIdioma(idiomaGuardado);
+
     const observer = new IntersectionObserver((entries, observer) => {
 
         entries.forEach(entry => {
