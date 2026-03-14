@@ -1,0 +1,31 @@
+{
+  "nav_home": "home",
+  "nav_projects": "proyectos",
+  "nav_about": "sobre mí",
+  "nav_contact": "contacto",
+
+  "hero_prefix": "Camilo es un",
+  "hero_role": "desarrollador front-end",
+  "hero_and": "y un aspirante a",
+  "hero_role2": "ingeniero de software",
+  "hero_subtitle": "Construye interfaces responsivas donde la tecnología se encuentra con la precisión",
+  "hero_cta": "Contáctame!!",
+
+  "works_status": "Actualmente trabajando en",
+  "works_status_project": "Portafolio",
+
+  "motivation_phrase": "Un gran poder conlleva una gran factura de electricidad",
+  "motivation_author": "- Dr. Who",
+
+  "projects_title": "proyectos",
+  "view_all": "Ver todo ~~>",
+
+  "project1_title": "proyecto 1",
+  "project1_description": "Descripción",
+  "project2_title": "proyecto 2",
+  "project2_description": "Descripción",
+  "project3_title": "proyecto 3",
+  "project3_description": "Descripción",
+  "project_live": "Live <~>",
+  "coming_soon": "Próximamente..."
+}
