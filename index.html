@@ -20,14 +20,14 @@
             </div>
             <nav id="NavContainer">
                 <ul>
-                    <li><a href="#Home"><span>#</span>home</a></li>
-                    <li><a href="#Works"><span>#</span>proyectos</a></li>
-                    <li><a href="#AboutMe"><span>#</span>sobre-mi</a></li>
-                    <li><a href="#Contactos"><span>#</span>contacto</a></li>
+                    <li><a href="#Home"><span>#</span><span data-i18n="nav_home">home</span></a></li>
+                    <li><a href="#Works"><span>#</span><span data-i18n="nav_projects">proyectos</span></a></li>
+                    <li><a href="#AboutMe"><span>#</span><span data-i18n="nav_about">sobre-mi</span></a></li>
+                    <li><a href="#Contactos"><span>#</span><span data-i18n="nav_contact">contacto</span></a></li>
                 </ul>
             </nav>
             <div class="IdiomaSelector">
-                <p>ES</p>
+                <p class="IdiomaLabel">ES</p>
                 <div class="IconIdioma">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                         fill="#e3e3e3">
@@ -35,8 +35,8 @@
                     </svg>
                 </div>
                 <div class="SelectorIdioma">
-                    <a href="index.html">ES</a>
-                    <a href="index-en.html">EN</a>
+                    <button  onclick="cargarIdioma('es')">ES</button>
+                    <button  onclick="cargarIdioma('en')">EN</button>
                 </div>
             </div>
 
@@ -60,10 +60,9 @@
         <section class="Hero-Section">
             <div class="Hero sections">
                 <div class="Hero-text">
-                    <p class="Text">Camilo is a <span>front-end developer</span> and aspiring <span>software
-                            engineer</span></p>
-                    <p class="Text-sub">He builds responsive interfaces where technology meets precision</p>
-                    <a href="#Contactos">Contact me!!</a>
+                    <p class="Text"><span data-i18n="hero_prefix">Camilo is a</span> <span data-i18n="hero_role">front-end developer</span> <span data-i18n="hero_and">and aspiring</span> <span data-i18n="hero_role2">software engineer</span></p>
+                    <p class="Text-sub" data-i18n="hero_subtitle">He builds responsive interfaces where technology meets precision</p>
+                    <a href="#Contactos" data-i18n="hero_cta">Contact me!!</a>
                 </div>
                 <div class="Hero-image">
                     <figure>
@@ -73,7 +72,7 @@
                     </figure>
                     <div class="Works-Status">
                         <div></div>
-                        <p>Currently working on <span>Portafolio</span></p>
+                        <p><span data-i18n="works_status">Currently working on</span> <span data-i18n="works_status_project">Portafolio</span></p>
                     </div>
                 </div>
             </div>
@@ -82,10 +81,10 @@
             <div class="Motivation-phrase sections">
                 <div class="phrase">
                     <img src="img/MotivationPhrase/comillas.svg" alt="">
-                    <p>With great power comes great electricity bill</p>
+                    <p data-i18n="motivation_phrase">With great power comes great electricity bill</p>
                 </div>
                 <div class="Autor">
-                    <p>- Dr. Who</p>
+                    <p data-i18n="motivation_author">- Dr. Who</p>
                     <img src="img/MotivationPhrase/comillas.svg" alt="">
                 </div>
             </div>
@@ -94,9 +93,9 @@
         <section id="Proyectos-container">
             <div class="Works-container sections">
                 <div class="header-section">
-                    <h2><span>#</span>projects</h2>
+                    <h2><span>#</span><span data-i18n="projects_title">projects</span></h2>
                     <div class="separador"></div>
-                    <a href="#">View all ~~></a>
+                    <a href="#" data-i18n="view_all">View all ~~></a>
                 </div>
                 <div id="Works-items" style="display: none;"> <!-- Aun no tengo aun proyectos terminados -->
                     <div class="Work-item item-1">
@@ -107,9 +106,9 @@
                             <!--  lenguajes usados -->
                         </div>
                         <div class="Action">
-                            <h2>project 1</h2>
-                            <p>Descripcion</p>
-                            <a href="#">Live <~></a>
+                            <h2 data-i18n="project1_title">project 1</h2>
+                            <p data-i18n="project1_description">Descripcion</p>
+                            <a href="#" data-i18n="project_live">Live <~></a>
                         </div>
                     </div>
                     <div class="Work-item item-2">
@@ -120,9 +119,9 @@
                             <!--  lenguajes usados -->
                         </div>
                         <div class="Action">
-                            <h2>project 2</h2>
-                            <p>Descripcion</p>
-                            <a href="#">Live <~></a>
+                            <h2 data-i18n="project2_title">project 2</h2>
+                            <p data-i18n="project2_description">Descripcion</p>
+                            <a href="#" data-i18n="project_live">Live <~></a>
                         </div>
                     </div>
                     <div class="Work-item item-3">
@@ -133,15 +132,15 @@
                             <!--  lenguajes usados -->
                         </div>
                         <div class="Action">
-                            <h2>project 3</h2>
-                            <p>Descripcion</p>
-                            <a href="#">Live <~></a>
+                            <h2 data-i18n="project3_title">project 3</h2>
+                            <p data-i18n="project3_description">Descripcion</p>
+                            <a href="#" data-i18n="project_live">Live <~></a>
                         </div>
                     </div>
                 </div>
                 <div class="Novedad"
                     style=" height: 30rem; text-align: center; display: flex; align-items: center; justify-content: center;">
-                    <p>Coming soon...</p>
+                    <p data-i18n="coming_soon">Coming soon...</p>
                 </div>
             </div>
             <div class="VectorDocs" style=" position: absolute; width: 20%; top: 30%;">
