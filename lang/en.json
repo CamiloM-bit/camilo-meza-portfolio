@@ -1,0 +1,31 @@
+{
+  "nav_home": "home",
+  "nav_projects": "projects",
+  "nav_about": "about me",
+  "nav_contact": "contact",
+
+  "hero_prefix": "Camilo is a",
+  "hero_role": "front-end developer",
+  "hero_and": "and aspiring",
+  "hero_role2": "software engineer",
+  "hero_subtitle": "He builds responsive interfaces where technology meets precision",
+  "hero_cta": "Contact me!!",
+
+  "works_status": "Currently working on",
+  "works_status_project": "Portafolio",
+
+  "motivation_phrase": "With great power comes great electricity bill",
+  "motivation_author": "- Dr. Who",
+
+  "projects_title": "projects",
+  "view_all": "View all ~~>",
+
+  "project1_title": "project 1",
+  "project1_description": "Description",
+  "project2_title": "project 2",
+  "project2_description": "Description",
+  "project3_title": "project 3",
+  "project3_description": "Description",
+  "project_live": "Live <~>",
+  "coming_soon": "Coming soon..."
+}
