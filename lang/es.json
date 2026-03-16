@@ -33,5 +33,8 @@
   "about_title": "sobre mí",
   "about_greeting": "¡Hola, soy Camilo!",
   "about_paragraph_1": "Soy un desarrollador front-end autodidacta de Colombia al que le gusta crear sitios web modernos y responsivos desde cero. Disfruto transformar ideas en experiencias digitales limpias y funcionales utilizando tecnologías web modernas.",
-  "about_paragraph_2": "Actualmente estoy mejorando mis habilidades en JavaScript y desarrollo web moderno mientras exploro áreas como Linux y ciberseguridad. Mi objetivo a largo plazo es convertirme en Ingeniero de Software y contribuir al desarrollo de software útil y con impacto."
+  "about_paragraph_2": "Actualmente estoy mejorando mis habilidades en JavaScript y desarrollo web moderno mientras exploro áreas como Linux y ciberseguridad. Mi objetivo a largo plazo es convertirme en Ingeniero de Software y contribuir al desarrollo de software útil y con impacto.",
+
+  "contact_title": "contactos",
+  "contact-text": "Me interesan las oportunidades de trabajo freelance. Sin embargo, si tienes alguna otra solicitud o pregunta, no dudes en contactarme"
 }

@@ -33,5 +33,8 @@
   "about_title": "about me",
   "about_greeting": "Hello, i’m Camilo!",
   "about_paragraph_1": "I'm a self-taught front-end developer from Colombia who enjoys building modern and responsive websites from scratch. I like transforming ideas into clean and functional digital experiences using modern web technologies.",
-  "about_paragraph_2": "I'm currently improving my skills in JavaScript and modern web development while exploring areas like Linux and cybersecurity. My long-term goal is to become a Software Engineer and contribute to building useful and impactful software."
+  "about_paragraph_2": "I'm currently improving my skills in JavaScript and modern web development while exploring areas like Linux and cybersecurity. My long-term goal is to become a Software Engineer and contribute to building useful and impactful software.",
+
+  "contact_title": "contacts",
+  "contact-text": "I’m interested in freelance opportunities. However, if you have other request or question, don’t  hesitate to contact me"
 }
