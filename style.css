@@ -620,7 +620,6 @@ main {
     flex-direction: column;
     position: relative;
     justify-self: center;
-    /* border: 1px solid blue; */
     width: 75%;
     height: auto;
 }
@@ -767,14 +766,14 @@ main {
     border:1px solid red;
 } */
 .Skills-container {
-   /*  border: 1px solid blue; */
+    /*  border: 1px solid blue; */
     display: flex;
     flex-direction: row;
     height: auto;
 }
 
 .Vector-container {
-    
+
     flex: 1;
     position: relative;
     /* border: 1px blue solid; */
@@ -908,6 +907,7 @@ main {
         top: 10%;
     }
 }
+
 .table-column {
     display: flex;
     flex-direction: column;
@@ -915,14 +915,17 @@ main {
     gap: 10px;
     width: 95%;
 }
+
 .table-item {
-    border: 1px solid ;
+    border: 1px solid;
     border-color: gray;
     transition: 0.5s all;
 }
+
 .table-item:hover {
     transform: scale(1.1);
 }
+
 .table-item h3 {
     padding-left: 6%;
     padding-right: 6%;
@@ -935,10 +938,113 @@ main {
     font-weight: lighter;
     font-size: 16px;
 }
+
 .table-item p {
     padding-left: 6%;
     padding-right: 6%;
     font-size: 16px;
     font-family: FiraCodeRegular;
     color: #9c9b9b;
+}
+
+.AboutMe-h {
+    display: grid;
+    grid-template-columns: 20% auto 50%;
+    padding-bottom: 0%;
+    align-items: none;
+}
+
+
+.AboutMe-Container {
+    display: flex;
+    height: 28rem;
+    /* border: 1px solid rgb(0, 47, 255); */
+}
+
+.AboutMeText {
+    /* border: 1px solid red; */
+    flex: 1;
+}
+
+.AboutMeText p {
+    font-family: FiraCodeRegular;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: lighter;
+    color: #a7a7a7;
+}
+
+.AboutMeHero {
+    position: relative;
+    /* border: 1px solid green; */
+    flex: 1;
+}
+
+.AboutMeHero img {
+    position: absolute;
+}
+
+.Personv1 {
+    /* border: 1px solid blue; */
+    right: 0;
+    bottom: 2%;
+    border-bottom: 1px solid #C778DD;
+}
+
+.Frame1 {
+    left: 32%;
+    top: -2.5%;
+    height: 84px;
+    width: 84px;
+    z-index: 2;
+    animation: Frame1-Animation 7s infinite;
+}
+
+.Frame2 {
+    right: 2%;
+    top: 49%;
+    animation: Frame2-Animation 7s infinite;
+}
+
+.VectorAboutMe {
+    height: 155px;
+    width: 155px;
+    border: 1px solid grey;
+    position: absolute;
+    top: 27%;
+    left: -10%;
+    transition: all 1s ease;
+}
+
+
+.VectorAboutMe.DespliegueRightv2 {
+    left: -5.5%;
+}
+
+@keyframes Frame1-Animation {
+    0% {
+        top: -2.5%;
+    }
+
+    50% {
+        top: 70%;
+    }
+}
+
+@keyframes Frame2-Animation {
+    0% {
+        top: 49%;
+    }
+
+    50% {
+        top: -2.5%;
+    }
+}
+
+.AboutMeHero:hover .Frame1 {
+    animation-play-state: paused;
+}
+
+.AboutMeHero:hover .Frame2 {
+    animation-play-state: paused;
 }
