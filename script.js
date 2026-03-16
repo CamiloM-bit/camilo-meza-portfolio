@@ -71,6 +71,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     entry.target.classList.add('DespliegueRight');
                 }
 
+                if (entry.target.classList.contains('VectorAboutMe')) {
+                    entry.target.classList.add('DespliegueRightv2');
+                }
+
                 observer.unobserve(entry.target);
             }
 
@@ -79,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
 
-    const items = document.querySelectorAll('.sections, .Vector-Retangulo, .VectorDocs');
+    const items = document.querySelectorAll('.sections, .Vector-Retangulo, .VectorDocs, .VectorAboutMe');
 
     items.forEach(item => {
         observer.observe(item);
