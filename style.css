@@ -36,6 +36,7 @@ body {
 }
 
 * {
+    transition: 1s all;
     box-sizing: border-box;
 }
 
@@ -1097,6 +1098,22 @@ main {
     height: 16px;
 }
 
+/* Footer */
+.Footer {
+    background-color: #100F0F;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 40px 10%;
+    font-family: FiraCodeRegular;
+    border-top: 1px solid #a1a1a1;
+}
+
+
+
+.Footer-copyright {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
 
 .Contacts p {
     display: flex;
@@ -1106,6 +1123,9 @@ main {
     font-size: 12px;
     flex: 1;
 }
+
 .Contacts:hover p {
     color: white;
 }
+
+
