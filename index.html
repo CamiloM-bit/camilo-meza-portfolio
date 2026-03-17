@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Icon_camilo.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Portafolio</title>
@@ -57,7 +58,7 @@
         </div>
     </div>
     <main>
-        <section class="Hero-Section">
+        <section class="Hero-Section" id="Home">
             <div class="Hero sections">
                 <div class="Hero-text">
                     <p class="Text"><span data-i18n="hero_prefix">Camilo is a</span> <span
@@ -82,19 +83,19 @@
             </div>
         </section>
         <section id="Frase-container">
-            <div class="Motivation-phrase sections">
+            <div class="Motivation-phrase sections" >
                 <div class="phrase">
                     <img src="img/MotivationPhrase/comillas.svg" alt="">
                     <p data-i18n="motivation_phrase">With great power comes great electricity bill</p>
                 </div>
-                <div class="Autor">
+                <div class="Autor" >
                     <p data-i18n="motivation_author">- Dr. Who</p>
-                    <img src="img/MotivationPhrase/comillas.svg" alt="">
+                    <img src="img/MotivationPhrase/comillas.svg" alt="" >
                 </div>
             </div>
-            <div class="Vector-Retangulo"></div>
+            <div class="Vector-Retangulo" ></div>
         </section>
-        <section class="Container-section">
+        <section class="Container-section" id="Works">
             <div class="Works-container sections">
                 <div class="header-section">
                     <h2><span>#</span><span data-i18n="projects_title">projects</span></h2>
@@ -206,12 +207,13 @@
                         </div>
 
                     </div>
+                    
                 </div>
             </div>
         </section>
-        <section class="Container-section">
+        <section class="Container-section" >
             <div class="VectorAboutMe"></div>
-            <div class="Container sections">
+            <div class="Container sections" id="AboutMe">
                 <div class="header-section AboutMe-h">
                     <h2><span>#</span><span data-i18n="about_title">about-me</span></h2>
                     <div class="separador"></div>
@@ -230,7 +232,7 @@
                     </div>
                     <div class="AboutMeHero">
                         <figure>
-                            <img src="img/Hero/Docs.svg" alt="" class="Frame1">
+                            <img src="img/Hero/Docs.svg" alt="" class="Frame1" >
                             <img src="img/HeroAbout/Personv1.svg" alt="" class="Personv1">
                             <img src="img/HeroAbout/DocsAbouts.svg" alt="" class="Frame2">
                         </figure>
@@ -238,7 +240,7 @@
                 </div>
             </div>
         </section>
-        <section class="Container-section">
+        <section class="Container-section" >
             <div class="Container sections">
                 <div class="header-section Contact-h">
                     <h2><span>#</span><span data-i18n="contact_title">about-me</span></h2>
@@ -264,7 +266,11 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="Footer">
+        <div class="Footer-copyright">
+            © Copyright 2026. Made by Camilo
+        </div>
+    </footer>
     <div class="Accesibilidad-container">
         <button class="btn-dark-light" disabled style="display: none;">
             <span class="dark-light-icon"></span>
