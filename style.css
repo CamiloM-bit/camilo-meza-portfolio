@@ -1134,7 +1134,11 @@ main {
     /* border: 1px solid blue; */
     width: 35%;
 }
-
+.cargo-item {
+    /* border: 1px springgreen solid; */
+    width: 20%;
+    margin: 0;
+}
 
 .Footer-logo figure {
     height: 100%;
