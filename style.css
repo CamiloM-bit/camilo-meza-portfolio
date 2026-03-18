@@ -1049,15 +1049,18 @@ main {
 .AboutMeHero:hover .Frame2 {
     animation-play-state: paused;
 }
+
 .Contact-h {
     grid-template-columns: 20% auto 65%;
 }
-.Contacts-container{
+
+.Contacts-container {
     /* border: 1px solid red; */
     height: 19rem;
     display: flex;
     position: relative;
 }
+
 .Contacts-container p {
     flex: 1;
     color: #a7a7a7;
@@ -1066,6 +1069,7 @@ main {
     font-family: FiraCodeRegular;
     /* border: 1px springgreen solid; */
 }
+
 .Contacts {
     padding: 10px 10px 10px 10px;
     display: flex;
@@ -1076,6 +1080,7 @@ main {
     height: 50%;
     overflow: hidden;
 }
+
 .Contacts .Contact-1 {
     display: flex;
     flex: 1;
@@ -1084,15 +1089,17 @@ main {
 
 .Contacts .Contact-2 {
     display: flex;
-   /*  border: 1px solid red; */
+    /*  border: 1px solid red; */
 }
- .icon {
+
+.icon {
     width: 40px;
     height: 100%;
     display: flex;
     align-items: center;
     /* border: 1px blue solid; */
 }
+
 .icon img {
     width: 16px;
     height: 16px;
@@ -1111,19 +1118,24 @@ main {
     padding-top: 10px;
     height: 13rem;
 }
+
 .FooterContainer {
     flex: 1;
     display: flex;
     justify-content: space-between;
     /* border: 1px solid red; */
+    position: relative;
     width: 75%;
 }
+
 .Container-info {
     display: flex;
     justify-content: space-between;
     /* border: 1px solid blue; */
-    width:45%;
+    width: 35%;
 }
+
+
 .Footer-logo figure {
     height: 100%;
     display: flex;
@@ -1132,70 +1144,86 @@ main {
     margin: 0;
     margin-right: 3px;
 }
+
 .Footer-logo img {
     width: 40px;
     height: 40px;
 }
+
 .Footer-logo {
     display: flex;
     font-family: FireCodeMedium;
     margin-right: 5px;
 }
+
 .FooterContainer .Footer-info {
     width: 40%;
 }
+
 .Footer-email p {
     color: rgb(160, 160, 160);
 }
+
 .Footer-media {
+    position: absolute;
+    right: 0;
     display: flex;
     flex-direction: column;
     /* border: 1px rgb(94, 255, 0) solid; */
     width: 12%;
+    top: 15%;
     font-family: FireCodeMedium;
     font-size: 24px;
 }
+
 .Header-media {
-    height: 30%;
+    height: auto;
     display: flex;
     align-items: center;
-    color: white;
+    color: rgb(211, 211, 211);
+    font-weight: 100;
     /* border: 1px solid blueviolet; */
 }
+
 .media-items figure {
     /* border: 1px solid red; */
     display: flex;
-    gap: 10px;
     margin: 0;
+    gap: 15px;
 }
 
 .media-items {
-   /*  border: 1px solid red; */
+    /*  border: 1px solid red; */
     display: flex;
     flex-direction: row;
-    
+
 }
+
 /* .media-items img {
     border: 1px solid red;
 } */
 .media1 {
-    width: 40px;
+    width: 35px;
     height: 100%;
 }
-.media2{
-    width: 30px;
+
+.media2 {
+    width: 23px;
     height: 100%;
 }
+
 .Footer-Copyright {
     height: 30%;
     width: 75%;
     /* border: yellow 1px solid ; */
 }
+
 .Footer-Copyright p {
     color: rgb(172, 171, 171);
     font-size: 16px;
     text-align: center;
 }
+
 .Footer-info {
     flex: 1;
     color: white;
@@ -1216,5 +1244,3 @@ main {
 .Contacts:hover p {
     color: white;
 }
-
-
