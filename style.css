@@ -1100,19 +1100,108 @@ main {
 
 /* Footer */
 .Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #100F0F;
     color: rgba(255, 255, 255, 0.8);
-    padding: 40px 10%;
     font-family: FiraCodeRegular;
     border-top: 1px solid #a1a1a1;
+    padding-top: 10px;
+    height: 13rem;
+}
+.FooterContainer {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 75%;
+}
+.Container-info {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+    width:45%;
+}
+.Footer-logo figure {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin: 0;
+    margin-right: 3px;
+}
+.Footer-logo img {
+    width: 40px;
+    height: 40px;
+}
+.Footer-logo {
+    display: flex;
+    font-family: FireCodeMedium;
+    margin-right: 5px;
+}
+.FooterContainer .Footer-info {
+    width: 40%;
+}
+.Footer-email p {
+    color: rgb(160, 160, 160);
+}
+.Footer-media {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px rgb(94, 255, 0) solid; */
+    width: 12%;
+    font-family: FireCodeMedium;
+    font-size: 24px;
+}
+.Header-media {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    color: white;
+    /* border: 1px solid blueviolet; */
+}
+.media-items figure {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 10px;
+    margin: 0;
 }
 
-
-
-.Footer-copyright {
-    font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.6);
+.media-items {
+   /*  border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    
+}
+/* .media-items img {
+    border: 1px solid red;
+} */
+.media1 {
+    width: 40px;
+    height: 100%;
+}
+.media2{
+    width: 30px;
+    height: 100%;
+}
+.Footer-Copyright {
+    height: 30%;
+    width: 75%;
+    /* border: yellow 1px solid ; */
+}
+.Footer-Copyright p {
+    color: rgb(172, 171, 171);
+    font-size: 16px;
     text-align: center;
+}
+.Footer-info {
+    flex: 1;
+    color: white;
+    font-family: FiraCodeRegular;
+    font-size: 16px;
+    /* border: 1px solid blue; */
 }
 
 .Contacts p {
