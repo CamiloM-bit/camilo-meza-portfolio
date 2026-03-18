@@ -1189,6 +1189,10 @@ main {
     /* border: 1px solid blueviolet; */
 }
 
+.Header-media p {
+    margin: 0;
+}
+
 .media-items figure {
     /* border: 1px solid red; */
     display: flex;
@@ -1207,12 +1211,12 @@ main {
     border: 1px solid red;
 } */
 .media1 {
-    width: 35px;
+    width: 34px;
     height: 100%;
 }
 
 .media2 {
-    width: 23px;
+    width: 22px;
     height: 100%;
 }
 
