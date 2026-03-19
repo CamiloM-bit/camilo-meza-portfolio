@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let traducciones = {};
 
     async function cargarIdioma(idioma) {
-        const res = await fetch(`lang/${idioma}.json`);
+        const langPath = window.location.pathname.includes('/pages/') ? '../lang/' : 'lang/';
+        const res = await fetch(`${langPath}${idioma}.json`);
         traducciones = await res.json();
 
         traducirPagina();
