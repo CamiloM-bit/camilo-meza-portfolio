@@ -38,6 +38,7 @@ body {
 * {
     transition: 1s all;
     box-sizing: border-box;
+    user-select: none;
 }
 
 
@@ -52,35 +53,8 @@ body {
 }
 
 body.dark-mode {
-    background-color: #ffffff;
+    background-color: #100F0F;
     color: #f8f8f8;
-}
-
-@font-face {
-    font-family: FiraCode;
-    src: url(fonts/Fira_Code/FiraCode-VariableFont_wght.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: FireCodeBold;
-    src: url(fonts/Fira_Code/static/FiraCode-Bold.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: FireCodeMedium;
-    src: url(fonts/Fira_Code/static/FiraCode-Medium.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: FireCodeSemiBold;
-    src: url(fonts/Fira_Code/static/FiraCode-SemiBold.ttf) format("truetype");
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: FiraCode, monospace;
-    transition: 0.5s all;
 }
 
 * {
@@ -1251,4 +1225,34 @@ main {
 
 .Contacts:hover p {
     color: white;
+}
+
+/* Dispositivos pequeños (teléfonos en vertical) */
+@media screen and (max-width: 480px) {
+    
+}
+
+/* Teléfonos grandes y phablets */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    
+}
+
+/* Tablets en vertical */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/* Tablets en horizontal y pantallas medianas */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    
+}
+
+/* Laptops y pantallas grandes */
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    
+}
+
+/* Monitores extra grandes */
+@media screen and (min-width: 1441px) {
+    
 }
