@@ -59,22 +59,21 @@ document.addEventListener("DOMContentLoaded", () => {
         entries.forEach(entry => {
 
             if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
 
-                
-                entry.target.classList.add('visible');
+                    if (entry.target.classList.contains('Vector-Retangulo')) {
+                        entry.target.classList.add('DespliegueLeft');
+                    }
 
-                
-                if (entry.target.classList.contains('Vector-Retangulo')) {
-                    entry.target.classList.add('DespliegueLeft');
-                }
+                    if (entry.target.classList.contains('VectorDocs')) {
+                        entry.target.classList.add('DespliegueRight');
+                    }
 
-                if (entry.target.classList.contains('VectorDocs')) {
-                    entry.target.classList.add('DespliegueRight');
-                }
-
-                if (entry.target.classList.contains('VectorAboutMe')) {
-                    entry.target.classList.add('DespliegueRightv2');
-                }
+                    if (entry.target.classList.contains('VectorAboutMe')) {
+                        entry.target.classList.add('DespliegueRightv2');
+                    }
+                }, 400);
 
                 observer.unobserve(entry.target);
             }
