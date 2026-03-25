@@ -78,7 +78,7 @@ main {
 
 header {
     position: fixed;
-    /* background-color: #100F0F; */
+    background-color: #100F0F;
     height: auto;
     width: 75%;
     justify-self: center;
