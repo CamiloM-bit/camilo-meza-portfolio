@@ -22,6 +22,9 @@
     font-family: FireCodeSemiBold;
     src: url(../fonts/Fira_Code/static/FiraCode-SemiBold.ttf) format("truetype");
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -485,6 +488,8 @@ main {
     position: relative;
     height: 13rem;
     margin: 0%;
+    margin-bottom: -6%;
+    z-index: 3;
 }
 
 .Vector-Retangulo {
@@ -597,6 +602,8 @@ main {
     justify-self: center;
     width: 75%;
     height: auto;
+    padding-top: 6%;
+    margin-bottom: -6%;
 }
 
 
@@ -609,6 +616,8 @@ main {
     /* border: 1px solid blue; */
     width: 75%;
     height: auto;
+    padding-top: 6%;
+    margin-bottom: -6%;
 }
 
 .header-section {
