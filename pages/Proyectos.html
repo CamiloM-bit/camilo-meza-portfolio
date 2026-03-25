@@ -21,10 +21,10 @@
             </div>
             <nav id="NavContainer">
                 <ul>
-                    <li><a href="../index.html"><span>#</span><span data-i18n="nav_home">home</span></a></li>
+                    <li><a href="../index.html#Home"><span>#</span><span data-i18n="nav_home">home</span></a></li>
                     <li><a href="../index.html#Works"><span>#</span><span data-i18n="nav_projects">proyectos</span></a></li>
-                    <li><a href="#AboutMe"><span>#</span><span data-i18n="nav_about">sobre-mi</span></a></li>
-                    <li><a href="#Contactos"><span>#</span><span data-i18n="nav_contact">contacto</span></a></li>
+                    <li><a href="../index.html#AboutMe"><span>#</span><span data-i18n="nav_about">sobre-mi</span></a></li>
+                    <li><a href="../index.html#Contactos"><span>#</span><span data-i18n="nav_contact">contacto</span></a></li>
                 </ul>
             </nav>
             <div class="IdiomaSelector">
@@ -59,11 +59,14 @@
     </div>
     <main>
         <section class="Container-section" id="Works">
-            <div class="Works-container sections">
-                <div class="header-section">
-                    <h2><span>#</span><span data-i18n="projects_title">projects</span></h2>
-                    <div class="separador"></div>
-                    <a href="#" data-i18n="view_all">View all ~~></a>
+            <div class="Works-container">
+                <div class="header-section header-works sections">
+                    <h2><span>/</span><span data-i18n="projects_title">projects</span></h2>
+                    <p data-i18n="projects_description">List of my projects</p>
+                </div>
+                <div class="header-section sections">
+                    <h2 style="font-size: 32px;"><span>#</span><span data-i18n="projects_title_1" >complete-apps</span></h2>
+                    
                 </div>
                 <div id="Works-items" style="display: none;"> <!-- Aun no tengo aun proyectos terminados -->
                     <div class="Work-item item-1">
@@ -106,10 +109,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="Novedad"
+                <div class="Novedad sections"
                     style=" height: 30rem; text-align: center; display: flex; align-items: center; justify-content: center;">
                     <p data-i18n="coming_soon">Coming soon...</p>
                 </div>
+                 <div class="header-section sections">
+                    <h2 style="font-size: 32px;"><span>#</span><span data-i18n="projects_title_2">small-projects</span></h2>
+                </div> 
+                <div class="Novedad sections"
+                    style=" height: 30rem; text-align: center; display: flex; align-items: center; justify-content: center;">
+                    <p data-i18n="coming_soon">Coming soon...</p>
+                </div>  
             </div>
             <div class="VectorDocs" style=" position: absolute; width: 20%; top: 30%;">
                 <svg width="38" height="84" viewBox="0 0 38 84" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,76 +135,10 @@
                     <circle cx="36" cy="82" r="2" fill="#ABB2BF" />
                 </svg>
             </div>
-            <div class="Vector-Retangulo" style="height: 30%; top: 50%; right: -15%;"></div>
+            <div class="Vector-Retangulo" style="top: 10%; right: -15%;"></div>
+            <div class="Vector-Retangulo" style="top: 60%; right: -15%;"></div>
         </section>
-        <section class="Container-section" id="Works">
-            <div class="Works-container sections">
-                <div class="header-section">
-                    <h2><span>#</span><span data-i18n="projects_title-p">projects</span></h2>
-                    <div class="separador"></div>
-                </div>
-                <div id="Works-items" style="display: none;"> <!-- Aun no tengo aun proyectos terminados -->
-                    <div class="Work-item item-1">
-                        <figure>
-                            <img src="" alt="Work-1">
-                        </figure>
-                        <div class="lenguaje-items">
-                            <!--  lenguajes usados -->
-                        </div>
-                        <div class="Action">
-                            <h2 data-i18n="project1_title">project 1</h2>
-                            <p data-i18n="project1_description">Descripcion</p>
-                            <a href="#" data-i18n="project_live">Live <~></a>
-                        </div>
-                    </div>
-                    <div class="Work-item item-2">
-                        <figure>
-                            <img src="" alt="Work-2">
-                        </figure>
-                        <div class="lenguaje-items">
-                            <!--  lenguajes usados -->
-                        </div>
-                        <div class="Action">
-                            <h2 data-i18n="project2_title">project 2</h2>
-                            <p data-i18n="project2_description">Descripcion</p>
-                            <a href="#" data-i18n="project_live">Live <~></a>
-                        </div>
-                    </div>
-                    <div class="Work-item item-3">
-                        <figure>
-                            <img src="" alt="Work-2">
-                        </figure>
-                        <div class="lenguaje-items">
-                            <!--  lenguajes usados -->
-                        </div>
-                        <div class="Action">
-                            <h2 data-i18n="project3_title">project 3</h2>
-                            <p data-i18n="project3_description">Descripcion</p>
-                            <a href="#" data-i18n="project_live">Live <~></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="Novedad"
-                    style=" height: 30rem; text-align: center; display: flex; align-items: center; justify-content: center;">
-                    <p data-i18n="coming_soon">Coming soon...</p>
-                </div>
-            </div>
-            <div class="VectorDocs" style=" position: absolute; width: 20%; top: 30%;">
-                <svg width="38" height="84" viewBox="0 0 38 84" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="16" cy="2" r="2" fill="#ABB2BF" />
-                    <circle cx="36" cy="2" r="2" fill="#ABB2BF" />
-                    <circle cx="16" cy="22" r="2" fill="#ABB2BF" />
-                    <circle cx="36" cy="22" r="2" fill="#ABB2BF" />
-                    <circle cx="16" cy="42" r="2" fill="#ABB2BF" />
-                    <circle cx="36" cy="42" r="2" fill="#ABB2BF" />
-                    <circle cx="16" cy="62" r="2" fill="#ABB2BF" />
-                    <circle cx="36" cy="62" r="2" fill="#ABB2BF" />
-                    <circle cx="16" cy="82" r="2" fill="#ABB2BF" />
-                    <circle cx="36" cy="82" r="2" fill="#ABB2BF" />
-                </svg>
-            </div>
-            <div class="Vector-Retangulo" style="height: 30%; top: 50%; right: -15%;"></div>
-        </section>
+       
         
     </main>
     <footer class="Footer">

@@ -1,26 +1,26 @@
 @font-face {
     font-family: FiraCode;
-    src: url(fonts/Fira_Code/FiraCode-VariableFont_wght.ttf) format("truetype");
+    src: url(../fonts/Fira_Code/FiraCode-VariableFont_wght.ttf) format("truetype");
 }
 
 @font-face {
     font-family: FiraCodeRegular;
-    src: url(fonts/Fira_Code/static/FiraCode-Regular.ttf) format("truetype");
+    src: url(../fonts/Fira_Code/static/FiraCode-Regular.ttf) format("truetype");
 }
 
 @font-face {
     font-family: FireCodeBold;
-    src: url(fonts/Fira_Code/static/FiraCode-Bold.ttf) format("truetype");
+    src: url(../fonts/Fira_Code/static/FiraCode-Bold.ttf) format("truetype");
 }
 
 @font-face {
     font-family: FireCodeMedium;
-    src: url(fonts/Fira_Code/static/FiraCode-Medium.ttf) format("truetype");
+    src: url(../fonts/Fira_Code/static/FiraCode-Medium.ttf) format("truetype");
 }
 
 @font-face {
     font-family: FireCodeSemiBold;
-    src: url(fonts/Fira_Code/static/FiraCode-SemiBold.ttf) format("truetype");
+    src: url(../fonts/Fira_Code/static/FiraCode-SemiBold.ttf) format("truetype");
 }
 
 body {
@@ -78,7 +78,7 @@ main {
 
 header {
     position: fixed;
-    background-color: #100F0F;
+    /* background-color: #100F0F; */
     height: auto;
     width: 75%;
     justify-self: center;
