@@ -941,8 +941,20 @@ main {
 }
 
 .AboutMeText {
-    /* border: 1px solid red; */
+    position:relative;
+    border: 1px solid red;
     flex: 1;
+}
+.AboutMeText a {
+    position: absolute;
+    bottom:10%;
+    padding:10px 10px ;
+    border: 1px solid #C778DD;
+    color: white;
+    text-decoration: none
+}
+.AboutMeText a:hover {
+    background-color: #c778dd;
 }
 
 .AboutMeText p {
