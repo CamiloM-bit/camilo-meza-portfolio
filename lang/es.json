@@ -34,10 +34,20 @@
   "Skill_title": "habilidades",
 
   "about_title": "sobre mí",
+  "AboutMe-subtitle": "Quien soy yo?",
   "about_greeting": "¡Hola, soy Camilo!",
   "about_paragraph_1": "Soy un desarrollador front-end autodidacta de Colombia al que le gusta crear sitios web modernos y responsivos desde cero. Disfruto transformar ideas en experiencias digitales limpias y funcionales utilizando tecnologías web modernas.",
   "about_paragraph_2": "Actualmente estoy mejorando mis habilidades en JavaScript y desarrollo web moderno mientras exploro áreas como Linux y ciberseguridad. Mi objetivo a largo plazo es convertirme en Ingeniero de Software y contribuir al desarrollo de software útil y con impacto.",
 
   "contact_title": "contactos",
-  "contact-text": "Me interesan las oportunidades de trabajo freelance. Sin embargo, si tienes alguna otra solicitud o pregunta, no dudes en contactarme"
+  "contact-text": "Me interesan las oportunidades de trabajo freelance. Sin embargo, si tienes alguna otra solicitud o pregunta, no dudes en contactarme",
+
+  "fun_facts_title": "mis-datos-curiosos",
+  "fun_fact_1": "Me gusta más el frío que el calor.",
+  "fun_fact_2": "A veces pienso demasiado.",
+  "fun_fact_3": "Prefiero las noches sobre las mañanas",
+  "fun_fact_4": "Disfruto pasando tiempo en mi computadora.",
+  "fun_fact_5": "Mi película favorita es Meet Joe Black",
+  "fun_fact_6": "Recientemente terminé la secundaria",
+  "fun_fact_7": "Tengo 5 hermanos."
 }

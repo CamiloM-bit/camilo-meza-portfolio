@@ -35,10 +35,21 @@
   "Skill_title": "skills",
 
   "about_title": "about me",
+  "AboutMe-subtitle": "Who am i?",
+  
   "about_greeting": "Hello, i’m Camilo!",
   "about_paragraph_1": "I'm a self-taught front-end developer from Colombia who enjoys building modern and responsive websites from scratch. I like transforming ideas into clean and functional digital experiences using modern web technologies.",
   "about_paragraph_2": "I'm currently improving my skills in JavaScript and modern web development while exploring areas like Linux and cybersecurity. My long-term goal is to become a Software Engineer and contribute to building useful and impactful software.",
 
   "contact_title": "contacts",
-  "contact-text": "I’m interested in freelance opportunities. However, if you have other request or question, don’t  hesitate to contact me"
+  "contact-text": "I’m interested in freelance opportunities. However, if you have other request or question, don’t  hesitate to contact me",
+
+  "fun_facts_title": "my-fun-facts",
+  "fun_fact_1": "I like the cold better than the heat.",
+  "fun_fact_2": "I think too much sometimes.",
+  "fun_fact_3": "I prefer nights over mornings",
+  "fun_fact_4": "I enjoy spending time on my computer.",
+  "fun_fact_5": "My favorite movie is Meet Joe Black",
+  "fun_fact_6": "I recently finished high school",
+  "fun_fact_7": "I have 5 siblings."
 }
