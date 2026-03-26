@@ -942,7 +942,6 @@ main {
 
 .AboutMeText {
     position:relative;
-    border: 1px solid red;
     flex: 1;
 }
 .AboutMeText a {
