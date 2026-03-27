@@ -854,3 +854,54 @@ main {
     bottom: 80%;
   }
 }
+
+.Contacts-container {
+    /* border: 1px solid red; */
+    height: 19rem;
+    display: flex;
+    position: relative;
+}
+
+.Contacts-container p {
+    flex: 1;
+    color: #a7a7a7;
+    padding-right: 30%;
+    font-size: 16px;
+    font-family: FiraCodeRegular;
+    /* border: 1px springgreen solid; */
+}
+
+.Contacts {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid gray;
+    width: 22.5%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.Contacts .Contact-1 {
+    display: flex;
+    flex: 1;
+    /* border: 1px solid red; */
+}
+
+.Contacts .Contact-2 {
+    display: flex;
+    /*  border: 1px solid red; */
+}
+
+.icon {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px blue solid; */
+}
+
+.icon img {
+    width: 16px;
+    height: 16px;
+}
