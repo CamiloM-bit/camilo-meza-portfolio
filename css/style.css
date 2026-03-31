@@ -110,6 +110,11 @@ header {
 #NavContainer ul li {
   cursor: pointer;
 }
+#NavContainer ul li a.active {
+    color: #ffffff !important;
+    font-weight: bold; 
+    transition: color 0.3s ease;
+}
 
 #NavContainer a {
   font-family: FireCodeMedium;
@@ -1316,9 +1321,9 @@ main {
   #Burger-btn-container {
     display: block;
     /* border:1px solid red; */
-}
+  }
 
-#Burger-btn-container button {
+  #Burger-btn-container button {
     background: none;
     border: none;
     cursor: pointer;
@@ -1328,48 +1333,48 @@ main {
     justify-content: center;
     -webkit-tap-highlight-color: transparent;
     outline: none;
-}
+  }
 
 
 
 
-#Burger-btn-container button .icon-burger {
+  #Burger-btn-container button .icon-burger {
     display: block;
     animation: girar 0.5s reverse ease-in-out;
-}
+  }
 
 
-#Burger-btn-container.burger-active .icon-burger {
+  #Burger-btn-container.burger-active .icon-burger {
     display: none;
-}
+  }
 
 
-#Burger-btn-container button .icon-close {
+  #Burger-btn-container button .icon-close {
     display: none;
-}
+  }
 
 
-#Burger-btn-container.burger-active .icon-close {
+  #Burger-btn-container.burger-active .icon-close {
     display: block;
     animation: girar 0.5s forwards ease-in-out;
-}
+  }
 
 
-#NavContainer.burger-active {
+  #NavContainer.burger-active {
     right: 0%;
-}
-
-
-@keyframes girar {
-  0% {
-    transform: rotate(0deg);
-    opacity: 0;
   }
-  100% {
-    transform: rotate(180deg);
-    opacity: 1;
+ 
+
+  @keyframes girar {
+    0% {
+      transform: rotate(0deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(180deg);
+      opacity: 1;
+    }
   }
-}
 }
 
 /* Teléfonos grandes y phablets */
